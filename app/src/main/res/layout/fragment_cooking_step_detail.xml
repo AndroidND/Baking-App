@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".CookingStepDetailFragment">
+
+
+
+
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_no_video_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/teal800"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_weight="5"
+        android:contentDescription="TODO" />
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal800"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        app:surface_type="texture_view"
+        android:layout_above="@id/tv_cookingstep_description"
+        />
+
+    <TextView
+        android:id="@+id/tv_cookingstep_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/teal50"
+        android:background="@color/teal800"
+        android:textStyle="bold|italic"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+<!--    <ImageView-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/iv_step_detail_thumbnail"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+</RelativeLayout>

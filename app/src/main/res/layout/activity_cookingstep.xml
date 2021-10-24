@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingstepActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/teal50"
+        android:background="@color/teal800"
+        android:textStyle="bold|italic"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/teal800"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_weight="5"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:src="@drawable/no_video"
+        android:id="@+id/iv_cookingstep"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/teal800"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_weight="5"
+        android:contentDescription="@string/video_placeholder" />
+
+    <TextView
+        android:id="@+id/tv_cookingstep_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:textSize="20sp"
+        android:textColor="@color/teal50"
+        android:background="@color/teal800"
+        android:textStyle="bold|italic"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+         />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/previous_step_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/teal800"
+            android:text="@string/previous"
+            android:textColor="@color/teal50"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/next_step_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/teal800"
+            android:text="@string/next"
+            android:textColor="@color/teal50"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+</LinearLayout>

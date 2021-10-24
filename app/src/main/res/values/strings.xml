@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">The-Baking-App</string>
+    <string name="AppTitle">Baking Time</string>
+    <string name="appwidget_text">RECIPE INGREDIENTS</string>
+    <string name="add_widget">Add widget</string>
+    <string name="update_now">Update now</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="video_placeholder">video placeholder</string>
+    <string name="recipe">Recipe</string>
+    <string name="recipe_fetch_error_message">Could not fetch recipes.  Please try again.</string>
+    <string name="recipe_loading_message">Recipes loading...</string>
+</resources>
